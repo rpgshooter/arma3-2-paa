@@ -253,7 +253,7 @@ void PAA::writePAA(const std::string& filename, PAAFormat targetFormat) {
         offset += 8 + 4 + tagg.dataLength;
     }
 
-    offset += 8 + 4 + 16 * 4; // OFFSTAGG itself
+    offset += 8 + 4 + (encodedMips.size() * 4); // OFFSTAGG itself (signature + length + data)
     offset += 2; // palette length
 
     for (const auto& mip : encodedMips) {
@@ -299,7 +299,6 @@ void PAA::writePAA(const std::string& filename, PAAFormat targetFormat) {
         writeBytes(ofs, mip.data);
     }
 
-    writeBytes<uint16_t>(ofs, 0);
     writeBytes<uint16_t>(ofs, 0);
     writeBytes<uint16_t>(ofs, 0);
 
