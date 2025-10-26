@@ -1,0 +1,20 @@
+{
+  "name": "arma3-paa-converter",
+  "version": "1.0.0",
+  "description": "Native C++ PAA converter for Arma 3 textures",
+  "dependencies": [
+    "boost-gil",
+    "libsquish",
+    "lzo",
+    "libpng",
+    "stb",
+    {
+      "name": "imgui",
+      "features": ["opengl3-binding", "glfw-binding"]
+    },
+    "glfw3",
+    "glad",
+    "portable-file-dialogs"
+  ],
+  "builtin-baseline": "271a5b8850aa50f9a40269cbf3cf414b36e333d6"
+}
