@@ -2,8 +2,6 @@
 
 High-performance native C++ texture converter for Arma 3's PAA format.
 
-**50-100x faster than WASM** - Convert 2048x2048 textures in 2-5 seconds instead of 3-4 minutes!
-
 ## Features
 
 - **Native C++ Performance** - Uses libsquish for DXT1/DXT5 compression
