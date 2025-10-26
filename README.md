@@ -81,8 +81,6 @@ arma3-paa-cli --batch "*.png" --output-dir ./paa/
 
 ### PAA Format Implementation
 
-Based on [gruppe-adler/grad_aff](https://github.com/gruppe-adler/grad_aff) C++ reference implementation.
-
 **Compression:**
 - DXT1: 8:1 compression (RGB, 1-bit alpha)
 - DXT5: 4:1 compression (RGBA, 8-bit alpha)
