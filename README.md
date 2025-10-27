@@ -97,14 +97,6 @@ arma3-paa-cli --batch "*.png" --output-dir ./paa/
 - FLAGTRANSP (GGATGALF): Transparency flag
 - OFFSETS (GGATSFFO): Mipmap offset table
 
-### Performance Comparison
-
-| Resolution | WASM | Native C++ | Speedup |
-|------------|------|------------|---------|
-| 512x512    | 8s   | 0.2s       | 40x     |
-| 1024x1024  | 30s  | 0.5s       | 60x     |
-| 2048x2048  | 225s | 2-5s       | 50-100x |
-
 ## Dependencies
 
 - **libsquish** - DXT compression library
